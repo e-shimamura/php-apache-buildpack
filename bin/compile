@@ -20,6 +20,8 @@ PHP_PATH="php"
 # ドキュメントルート(/app/www/)の設定                                          #
 # ---------------------------------------------------------------------------- #
 cd $BUILD_DIR
+pwd
+ls -la
 
 mkdir -p $CACHE_DIR/www
 mv * $CACHE_DIR/www
@@ -74,7 +76,8 @@ exec /app/apache/bin/httpd -DNO_DETACH
 EOF
 
 chmod +x boot.sh
-find / -name boot.sh
+pwd
+ls -la
 
 # ---------------------------------------------------------------------------- #
 # キャッシュディレクトリをクリア                                               #
