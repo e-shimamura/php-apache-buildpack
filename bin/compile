@@ -55,6 +55,10 @@ ln -s /app/php/bin/php bin/php
 # ---------------------------------------------------------------------------- #
 # Apache HTTP Server 起動スクリプト(boot.sh)作成                               #
 # ---------------------------------------------------------------------------- #
+
+pwd
+ls -la
+
 cat >> boot.sh <<EOF
 for var in \`env|cut -f1 -d=\`; do
   echo "PassEnv \$var" >> /app/apache/conf/httpd.conf;
