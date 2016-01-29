@@ -74,6 +74,7 @@ exec /app/apache/bin/httpd -DNO_DETACH
 EOF
 
 chmod +x boot.sh
+find / -name boot.sh
 
 # ---------------------------------------------------------------------------- #
 # キャッシュディレクトリをクリア                                               #
